@@ -19,8 +19,8 @@ $results = $stmt->execute();
 $arr = array();
 
 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-    $temp = array(['id' => $row['id']], ['task' => $row['task']], ['isDone' => $row['isDone']], ['createdAt' => $row['createdAt']]);
+    $temp = array('id' => $row['id'], 'task' => $row['task'], 'isDone' => $row['isDone'], 'createdAt' => $row['createdAt']);
     $arr[] = $temp;
 }
 
-echo json_encode($arr) . "<br>";
+echo json_encode($arr);
