@@ -1,0 +1,6 @@
+{
+    "name": "tasks-api",
+    "require": {
+      "php": ">=8.0"
+    }
+  }
